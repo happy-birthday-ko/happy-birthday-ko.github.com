@@ -1,1 +1,96 @@
-hello
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>생일을 축하해 꼬 ㅋㅋ</title>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="examples/examples.css" />
+    <style type="text/css">
+
+
+            /* Style for our header texts
+	* --------------------------------------- */
+        h1{
+            font-size: 4em;
+            font-family: arial,helvetica;
+            color: #000;
+            margin:0;
+            padding:0;
+        }
+
+            /* Centered texts in each section
+            * --------------------------------------- */
+        .section{
+            text-align:center;
+        }
+
+        #section0,
+        #section1,
+        #section2,
+        #section3,
+        #section4,
+        #section5,
+        #section6
+        {
+            background-size: cover;
+        }
+
+        #section5{
+            background-image: url(imgs/happybirthday.jpg);
+            padding: 20% 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <h1>안녕 꼬 ~</h1>
+    </div>
+    <div class="section" id="section1">
+        <h1>하와이팀에 온지 꽤~~ 시간이 지났네? ㅎㅎ</h1>
+    </div>
+    <div class="section" id="section2">
+        <h1>개발자로써, 동료로써 성장하고 있는 모습이 참 뿌듯 *^^*</h1>
+    </div>
+    <div class="section" id="section3">
+        <h1>"뷰티데이" 에 깜놀하기도 했지만 ....</h1>
+    </div>
+    <div class="section" id="section4">
+        <h1>짝꿍으로써 "긍정긍정"을 주는 꼬에게 항상 고마워</h1>
+    </div>
+    <div class="section" id="section5">
+        <h1>꼬 생일을 축하해~ </h1>
+    </div>
+    <div class="section" id="section6">
+        <h1>다음 생일까지 즐거운 일 짱짱 이길 바래~</h1>
+    </div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is needed in case of using the default easing option or when using another
+ one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $('#fullpage').fullpage();
+    });
+</script>
+</body>
+</html>
+
+
+
+
